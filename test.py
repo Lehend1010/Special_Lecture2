@@ -1,5 +1,5 @@
 import unittest
-from speciallecture.speciallecture import CSVPrinter
+from speciallecture import CSVPrinter
 
 class TestCSVPrinter (unittest.TestCase):
     def test_read1(self):
@@ -14,9 +14,7 @@ class TestCSVPrinter (unittest.TestCase):
         self.assertEqual(" bbb2",line[1][1])
         
     def test_read3(self):
-        try:
-            printer = CSVPrinter("test/Sample.csv")
-            printer.read()
-            unittest.TestCase.fail("This line should not be invoked")
-        except ValueError as e:
-            print("Error: ",e)
+        with self.assertRaises(FileNotFoundError) as e:
+            printer = CSVPrinter("Sample.csv")
+            line = printer.read()
+            print(line)
