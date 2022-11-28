@@ -14,7 +14,7 @@ class TestCSVPrinter (unittest.TestCase):
         self.assertEqual(" bbb2",line[1][1])
         
     def test_read3(self):
-        with self.assertRaises(FileNotFoundError) as e:
+        with self.assertRaises(ValueError) as e:
             printer = CSVPrinter("Sample.csv")
             line = printer.read()
             print(line)
