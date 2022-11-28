@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+From 生理学的・ソーシャルコンピューティング to ソフトウェア設計学の研究動向 Update New
+=======
+From 生理学的・ソーシャルコンピューティング to ソフトウェア設計学の研究動向 Update Previous
+>>>>>>> 55f6894a74caa4effadafabafdb1da68a32aa06e
+
+2022/11/15 Ryosuke Kondo
+Review Contents!!!
+
+2022/11/17 Ryosuke Kondo
+modifyyyyyyyyyyyy
